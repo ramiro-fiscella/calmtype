@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+  color: #d4c8bb;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #191818;
+}
+
+.wrapper {
+  width: 770px;
+  padding: 35px;
+  background-color: #191818;
+  border-radius: 3px;
+}
+
+.wrapper .container {
+  padding: 24px 28px 0;
+  border-radius: 3px;
+  border: 1px solid #7b60a6;
+}
+
+.wrapper .typing-text {
+  max-height: 255px;
+  overflow-y: auto;
+}
+
+.typing-text::-webkit-scrollbar {
+  width: 0;
+}
+
+.typing-text p {
+  font-size: 21px;
+  text-align: justify;
+  letter-spacing: 1px;
+  word-break: break-all;
+}
+.typing-text p span {
+  position: relative;
+}
+.typing-text p span.active {
+  color: #e1ceff;
+}
+.typing-text p span.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  opacity: 0;
+  background: #e1ceff;
+  animation: blink 1s ease-in-out infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 1;
+  }
+}
+
+.typing-text p span.correct {
+  color: #9b6ae9;
+}
+.typing-text p span.incorrect {
+  color: #fa5459;
+}
+
+.container .content {
+  display: flex;
+  margin-top: 17px;
+  padding: 17px 0;
+  align-items: center;
+  border-top: 1px solid #7b60a6;
+  justify-content: space-between;
+}
+
+.content button {
+  border: none;
+  outline: none;
+  width: 105px;
+  padding: 9px 0;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #7b60a6;
+  border-radius: 2px;
+  transition: transform 0.1s ease;
+}
+
+.content button:active {
+  transform: scale(0.96);
+}
+
+.content .result-details {
+  display: flex;
+  width: calc(100% - 140px);
+  justify-content: space-between;
+}
+
+.result-details li {
+  height: 30px;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.result-details li:not(:first-child) {
+  border-left: 1px solid #7b60a6;
+  padding-left: 11px;
+}
+
+.result-details li p {
+  font-size: 19px;
+}
+
+.result-details li span {
+  display: block;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.result-details li:not(:first-child) span {
+  font-weight: 600;
+}
+
+.result-details li b {
+  font-weight: 600;
+}
