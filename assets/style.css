@@ -121,6 +121,7 @@ body {
 .result-details li:not(:first-child) {
   border-left: 1px solid #7b60a6;
   padding-left: 11px;
+  display: flex;
 }
 
 .result-details li p {
@@ -129,7 +130,7 @@ body {
 
 .result-details li span {
   display: block;
-  margin-left: 10px;
+  margin-left: 2px;
   font-size: 20px;
 }
 
