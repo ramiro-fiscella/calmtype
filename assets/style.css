@@ -22,6 +22,12 @@ body {
   border-radius: 3px;
 }
 
+.wrapper .input-field {
+  z-index: -200;
+  opacity: 0;
+  position: absolute;
+}
+
 .wrapper .container {
   padding: 24px 28px 0;
   border-radius: 3px;
