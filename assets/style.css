@@ -16,8 +16,8 @@ body {
 }
 
 .wrapper {
-  width: 770px;
-  padding: 35px;
+  width: 750px;
+  padding: 4rem;
   background-color: #191818;
   border-radius: 3px;
 }
@@ -44,7 +44,7 @@ body {
 }
 
 .typing-text p {
-  font-size: 21px;
+  font-size: 1.2rem;
   text-align: justify;
   letter-spacing: 1px;
   word-break: break-all;
@@ -82,8 +82,8 @@ body {
 
 .container .content {
   display: flex;
-  margin-top: 17px;
-  padding: 17px 0;
+  margin-top: 12px;
+  padding: 1px 0;
   align-items: center;
   border-top: 1px solid #7b60a6;
   justify-content: space-between;
@@ -92,10 +92,10 @@ body {
 .content button {
   border: none;
   outline: none;
-  width: 105px;
-  padding: 9px 0;
+  width: 7rem;
+  padding: 7px 0;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1rem;
   background-color: #7b60a6;
   border-radius: 2px;
   transition: transform 0.1s ease;
@@ -107,7 +107,6 @@ body {
 
 .content .result-details {
   display: flex;
-  width: calc(100% - 140px);
   justify-content: space-between;
 }
 
@@ -116,6 +115,7 @@ body {
   display: flex;
   list-style: none;
   align-items: center;
+  margin: 10px;
 }
 
 .result-details li:not(:first-child) {
@@ -125,13 +125,13 @@ body {
 }
 
 .result-details li p {
-  font-size: 19px;
+  font-size: 1rem;
 }
 
 .result-details li span {
   display: block;
   margin-left: 2px;
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 .result-details li:not(:first-child) span {
