@@ -1,2 +1,4 @@
-# typing-speed-test
+# 🧡 nicetype
+
+
  
